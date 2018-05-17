@@ -1,0 +1,40 @@
+{
+    "name": "cinkon/kittn-test-plugin-foo",
+    "description": "A test-plugin to learn how it works",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "kittn-test-plugin-foo"
+    ],
+    "support": {
+        "docs": "https://github.com/CinKon/kittn-test-plugin-foo/blob/master/README.md",
+        "issues": "https://github.com/CinKon/kittn-test-plugin-foo/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lars Eichler",
+            "homepage": "https://larseichler.de"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "cinkon\\kittntestpluginfoo\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "kittn-test-plugin-foo",
+        "handle": "kittn-test-plugin-foo",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/CinKon/kittn-test-plugin-foo/master/CHANGELOG.md",
+        "class": "cinkon\\kittntestpluginfoo\\Kittntestpluginfoo"
+    }
+}
