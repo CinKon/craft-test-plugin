@@ -1,0 +1,17 @@
+{% extends '_layouts/cp' %}
+{# Block settings overview, lists blocks and their usage/info. #}
+
+{% set title = 'Base' | t('kittntestpluginfoo') %}
+{% set selectedSubnavItem = 'base' %}
+
+{% set crumbs = [
+    { label: 'Kittntestpluginfoo', url: url('kittntestpluginfoo/base') }
+] %}
+
+{% set sidebar %}
+	{% include "kittn-test-plugin-foo/blocks/_sidebar" %}
+{% endset %}
+
+{% block content %}
+<h1>Hello</h1>
+{% endblock %}
