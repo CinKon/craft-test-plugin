@@ -5,13 +5,14 @@
 {% set selectedSubnavItem = 'base' %}
 
 {% set crumbs = [
-    { label: 'Kittntestpluginfoo', url: url('kittntestpluginfoo/base') }
+  { label: 'Kittntestpluginfoo', url: url('kittn-test-plugin-foo/index') },
+  { label: 'Base', url: url('kittn-test-plugin-foo/base') }
 ] %}
 
 {% set sidebar %}
-	{% include "kittn-test-plugin-foo/blocks/_sidebar" %}
+	{% include "kittn-test-plugin-foo/base/_sidebar" %}
 {% endset %}
 
 {% block content %}
-<h1>Hello</h1>
+<h1>Hello Base Settings</h1>
 {% endblock %}

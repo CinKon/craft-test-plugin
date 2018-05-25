@@ -87,7 +87,8 @@ class Kittntestpluginfoo extends Plugin
             UrlManager::class,
             UrlManager::EVENT_REGISTER_SITE_URL_RULES,
             function (RegisterUrlRulesEvent $event) {
-                $event->rules['siteActionTrigger1'] = 'kittn-test-plugin-foo/default';
+                $event->rules['siteActionTriggerIndex'] = 'kittn-test-plugin-foo/index';
+                $event->rules['siteActionTriggerBase'] = 'kittn-test-plugin-foo/base';
             }
         );
 
@@ -127,7 +128,7 @@ class Kittntestpluginfoo extends Plugin
                 if (\Craft::$app->user->identity->admin) {
                     $event->navItems['kittn-test-plugin-foo'] = [
                         'label' => \Craft::t('kittn-test-plugin-foo', 'Kittn Test Plugin Foo'),
-                        'url' => 'kittntestpluginfoo/index'
+                        'url' => 'kittn-test-plugin-foo/index'
                     ];
 
                     $this->getCpNavItem();
@@ -173,7 +174,7 @@ class Kittntestpluginfoo extends Plugin
         $item['subnav'] = [
             'base' => [
                 'label' => \Craft::t('kittn-test-plugin-foo', 'Base'),
-                'url' => 'kittntestplugin/base'
+                'url' => 'kittn-test-plugin-foo/base'
             ]
         ];
 

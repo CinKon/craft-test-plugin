@@ -2,7 +2,7 @@
 	<ul>
 
 		<li>
-			<a href="{{ url('kittntestpluginfoo/base') }}">
+			<a href="{{ url('kittn-test-plugin-foo/base') }}" {% if (selectedSubnavItem == 'base') %} class="sel"{% endif %}>
 				<span class="label">{{ 'Base Settings' | t('kittntestpluginfoo') }}</span>
 			</a>
 		</li>
